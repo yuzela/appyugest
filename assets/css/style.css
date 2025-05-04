@@ -1,0 +1,267 @@
+/* Fundo animado com gradiente */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #1de9b6, #1dc8cc);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Ajuste de cores para textos */
+  .text-dark {
+    color: #fff !important;
+  }
+  
+  /* Navbar transparente ou clara */
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+  }
+  .nav-link:hover {
+    color: #d0f0ff !important;
+  }
+  
+  /* Seções */
+  section {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    scroll-margin-top: 80px;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: #fff;
+  }
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card .card-title,
+  .card p {
+    color: #ffffffdd;
+  }
+  
+  /* Botão WhatsApp fixo */
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white !important;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    animation: floatEffect 2s ease-in-out infinite alternate;
+    transition: background-color 0.3s ease;
+  }
+  .whatsapp-button:hover {
+    background-color: #1ebd58;
+  }
+  .whatsapp-button i {
+    font-size: 24px;
+  }
+  
+  @keyframes floatEffect {
+    0%   { transform: translateY(0px); }
+    100% { transform: translateY(-6px); }
+  }
+  
+  /* Inputs com fundo claro */
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+  }
+  .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .card-servico {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .card-servico:hover {
+    transform: translateY(-6px);
+  }
+  .card-servico h5,
+  .card-servico p {
+    color: #000000 !important;
+  }
+  .card-servico i {
+    color: #1e90ff !important;
+  }
+  .card-presenca {
+    background-color: #ffffff !important;
+    color: #000 !important;
+    transition: transform 0.3s ease-in-out;
+  }
+  .card-presenca:hover {
+    transform: translateY(-6px);
+  }
+  
+  .card-presenca h5 {
+    color: #000 !important;
+  }
+  .card-presenca .fa-map-marker-alt,
+  .card-presenca .fa-building {
+    color: #1e90ff;
+  }
+  /* Textos escuros */
+.text-dark-custom {
+    color: #000 !important;
+  }
+  
+  .card-presenca,
+  .card-servico,
+  .card-body,
+  .card-text,
+  .card-title,
+  .card-footer,
+  .card-header,
+  .card a,
+  .card p,
+  .card h5 {
+    color: #000 !important;
+  }
+  
+  /* Estilização dos cards de serviço */
+  .card-servico {
+    background-color: #ffffff !important;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out;
+  }
+  .card-servico:hover {
+    transform: translateY(-6px);
+  }
+  
+  /* Ajuste nas seções com fundo claro */
+  .bg-light {
+    background-color: #f8f9fa !important;
+  }
+  
+  /* Rodapé com contraste adequado */
+  footer {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+  footer .nav-link {
+    color: #000 !important;
+  }
+  /* assets/css/style.css */
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    transition: background-color 0.3s ease;
+  }
+  .whatsapp-button:hover {
+    background-color: #1ebd58;
+  }
+  
+  .card-servico,
+  .card-presenca {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .card-servico:hover,
+  .card-presenca:hover {
+    transform: translateY(-6px);
+  }
+  
+  .card-title,
+  .card-text {
+    color: #000;
+  }
+  
+  /* Para telas menores (smartphones) */
+  @media (max-width: 576px) {
+    .display-4 {
+      font-size: 1.75rem;
+    }
+  
+    .lead {
+      font-size: 1rem;
+    }
+  
+    .btn-lg {
+      padding: 0.4rem 0.8rem;
+      font-size: 1rem;
+    }
+  
+    .whatsapp-button {
+      width: 45px;
+      height: 45px;
+      bottom: 15px;
+      right: 15px;
+    }
+  
+    .whatsapp-button i {
+      font-size: 1.2rem;
+    }
+  
+    .navbar-brand img {
+      width: 28px;
+    }
+  
+    .card-body h5 {
+      font-size: 1.2rem;
+    }
+  
+    /* Alinhar os links do menu verticalmente em mobile */
+    .navbar-nav {
+      text-align: center;
+    }
+    .nav-link {
+      padding: 0.5rem 0.7rem !important;
+    }
+  }
